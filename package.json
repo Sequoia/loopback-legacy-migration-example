@@ -1,26 +1,26 @@
 {
   "name": "loopback-legacy-migration-example",
-  "version": "0.0.1",
-  "description": "Example of using loopback to easily manage multiple data sources",
-  "main": "index.js",
+  "version": "1.0.0",
+  "main": "server/server.js",
   "scripts": {
-    "wholesaler-api" : "json-server ./remote-wholesaler-data/parts.json --watch --port=3131",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "pretest": "jshint ."
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sequoia/loopback-legacy-migration-example.git"
+    "type": "",
+    "url": ""
   },
-  "keywords": [
-    "loopback-examples"
-  ],
-  "author": "Sequoia McDowell <sequoia.mcdowell@gmail.com> (http://sequoia.makes.software/)",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/Sequoia/loopback-legacy-migration-example/issues"
-  },
-  "homepage": "https://github.com/Sequoia/loopback-legacy-migration-example#readme",
-  "devDependencies": {
-    "json-server": "^0.8.7"
-  }
+  "description": "loopback-legacy-migration-example"
 }
