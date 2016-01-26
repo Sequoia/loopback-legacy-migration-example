@@ -22,7 +22,7 @@
         }
       },
       "functions": {
-        "get": ["sku"]
+        "findById": ["sku"]
       }
     }]
   }

@@ -1,7 +1,7 @@
 var async = require('async');
 module.exports = function(Part) {
     Part.getAll = function(skus, cb) {
-      async.map(skus, Part.get, function (err, parts){
+      async.map(skus, Part.findById, function (err, parts){
         if(err) return done(err);
         cb(null, parts);
       });
