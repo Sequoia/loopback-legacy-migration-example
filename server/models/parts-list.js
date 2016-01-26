@@ -19,11 +19,10 @@ module.exports = function(PartsList) {
         csvParse(res, function(err, partlist){
           if(err) return done(err);
           //parse the list from CSV
-          var skus = partlist.map( function getSku(partTuple){
+          var skus = partlist.map(function getSku(partTuple){
             return partTuple[1];
           });
           //2. look up values for each related record
-          debug(skus);
           app.models.Part.getAll(skus,done);
         });
       });
