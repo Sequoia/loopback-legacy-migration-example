@@ -2,5 +2,28 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "products": {
+    "name": "products",
+    "connector": "sqlite",
+    "file_name": "./local-db-data/local_database.sqlite3",
+    "debug": true 
+  },
+  "partsServer": {
+    "name": "partsServer",
+    "connector": "rest",
+    "operations": [{
+      "template": {
+        "method": "GET",
+        "url": "http://localhost:3031/parts/{sku}",
+        "headers": {
+          "accepts": "application/json",
+          "content-type": "application/json"
+        }
+      },
+      "functions": {
+        "get": ["sku"]
+      }
+    }]
   }
 }

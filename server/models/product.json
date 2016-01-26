@@ -1,0 +1,34 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parts": {
+      "type": "hasMany",
+      "model": "Part",
+      "foreignKey": "",
+      "through": "PartsList"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

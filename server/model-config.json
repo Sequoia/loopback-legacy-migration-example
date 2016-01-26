@@ -31,5 +31,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Product": {
+    "dataSource": "products",
+    "public": true
+  },
+  "Part": {
+    "dataSource": "partsServer",
+    "public": true
+  },
+  "PartsList": {
+    "dataSource": "db",
+    "public": true
   }
 }
