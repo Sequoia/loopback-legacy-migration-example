@@ -1,7 +1,6 @@
 var fs = require('fs');
 var csvParse = require('csv-parse');
 var path = require('path');
-var debug = require('debug')('app:partsList');
 
 module.exports = function(PartsList) {
   PartsList.on('attached', function(app){
