@@ -1,7 +1,7 @@
 # LoopBack legacy system migration demo
 
 This demo app accompanies a blog post found here:
-<http://strongloop.com/strongblog/TODO>
+<https://strongloop.com/strongblog/migrating-a-legacy-system-to-loopback-even-with-complicated-data/>
 
 ## Be advised:
 1. sqllite path config is different from blog post
